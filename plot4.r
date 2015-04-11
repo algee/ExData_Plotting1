@@ -18,7 +18,7 @@ plot(xtime,subsetdata$Global_active_power,
      ylab = "Global Active Power (kilowatts)",
      type = "l")
 
-par(lwd = 1)
+par(lwd = 0.5)
 plot(xtime,subsetdata$Voltage,
      xlab = "datetime",
      ylab = "Voltage (volts)",
@@ -38,7 +38,7 @@ legend("topright",
        c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col = c("black","red","blue"), lty = c(1,1,1), bty = "n", cex = 0.75)
 
-par(lwd = 1)
+par(lwd = 0.5)
 plot(xtime,subsetdata$Global_reactive_power,
      xlab = "datetime",
      ylab = "Global Reactive Power (kilowatts)",
