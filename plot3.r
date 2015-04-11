@@ -10,6 +10,8 @@ xtime <- strptime( paste(subsetdata$Date, subsetdata$Time) , format = "%d/%m/%Y 
 
 png(filename = "plot3.png", width = 480, height = 480)
 
+par(lwd = 2)
+
 plot(xtime,subsetdata$Sub_metering_1,
      xlab = "",
      ylab = "Energy sub metering",

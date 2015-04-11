@@ -10,6 +10,8 @@ xtime <- strptime( paste(subsetdata$Date, subsetdata$Time) , format = "%d/%m/%Y 
 
 png(filename = "plot2.png", width = 480, height = 480)
 
+par(lwd = 2)
+
 plot(xtime,subsetdata$Global_active_power,
      xlab = "",
      ylab = "Global Active Power (kilowatts)",
