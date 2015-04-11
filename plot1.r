@@ -25,11 +25,13 @@ write.table(subsetdata,"subsetdata.txt",row.names = FALSE)
 #
 ##################################
 
+png(filename = "plot1.png", width = 480, height = 480)
+
 hist(subsetdata$Global_active_power, 
      col = "red", 
      xlab = "Global Active Power (kilowatts)",
      main = "Global Active Power")
 
-dev.copy(png, width = 480, height = 480, file = "plot1.png")
+# dev.copy(png, width = 480, height = 480, file = "plot1.png")
 dev.off()
 
